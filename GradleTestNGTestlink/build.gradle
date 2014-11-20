@@ -29,10 +29,10 @@ task runTestNGSuite (type:Exec) {
 
 test {
     systemProperties 'property': 'value'
-//    useTestNG() {
-//		suites 'src/test/resources/suite.xml'
-//	}
- tasks.runTestNGSuite.execute()
+    useTestNG() {
+		suites 'src/test/resources/suite.xml'
+	}
+ //tasks.runTestNGSuite.execute()
 
 }
 

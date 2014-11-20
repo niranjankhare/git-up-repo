@@ -5,10 +5,18 @@ import org.testng.annotations.Test;
 @Test
 public class PersonTest {
    
-    public void canConstructAPersonWithAName() {
+	@Test (priority = 2)
+    public void canConstructAPersonWithAName1() {
         Person person = new Person("Larry");
         assertEquals("Larry", person.getName());
         assertEquals("Boolean test", true, false);
+        System.out.println("Test complete!!");
+    }
+	@Test (priority = 1)
+    public void canConstructAPersonWithAName2() {
+        Person person = new Person("Larry");
+        assertEquals("Larry", person.getName());
+//        assertEquals("Boolean test", true, false);
         System.out.println("Test complete!!");
     }
 }

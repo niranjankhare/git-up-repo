@@ -22,12 +22,23 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
+task runTestNGSuite (type:Exec) {
+
+	commandLine 'echo', "Hello", "echoed"
+    }
+
 test {
     systemProperties 'property': 'value'
-    useTestNG() {
-		//suites 'src/test/resources/testng.xml'
-	}
+//    useTestNG() {
+//		suites 'src/test/resources/suite.xml'
+//	}
+ tasks.runTestNGSuite.execute()
+
 }
+
+
+
+
 
 uploadArchives {
     repositories {

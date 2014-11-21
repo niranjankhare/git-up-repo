@@ -24,7 +24,7 @@ dependencies {
 
 task runTestNGSuite (type:Exec) {
 
-	commandLine 'echo', "Hello", "echoed"
+//	commandLine 'echo', "Hello", "echoed"
     }
 
 test {
@@ -38,7 +38,6 @@ test {
  //tasks.runTestNGSuite.execute()
 
 }
-
 
 
 

@@ -3,7 +3,7 @@ package org.gradle;
 import static org.testng.AssertJUnit.assertEquals;
 import org.testng.annotations.Test;
 @Test
-public class PersonTest {
+public class PersonTest1 {
    
 	@Test (priority = 2)
     public void canConstructAPersonWithAName1() {

@@ -24,15 +24,15 @@ dependencies {
 
 task runTestNGSuite (type:Exec) {
 
-//	commandLine 'echo', "Hello", "echoed"
+	commandLine 'echo', "Hello", "echoed"
     }
 
 test {
 	testLogging.showStandardStreams = true
     systemProperties 'property': 'value'
     useTestNG() {
-		suites 'src/test/resources/suite.xml'
-		//useDefaultListeners = true
+		suites 'suite.xml'
+		useDefaultListeners = true
 	}
 	reports.html.enabled = false
  //tasks.runTestNGSuite.execute()
